@@ -1,3 +1,4 @@
+"""
 from django.shortcuts import render, get_object_or_404
 from rest_framework import viewsets
 from .models import Post
@@ -14,3 +15,4 @@ from rest_framework import generics
 class PostList(generics.ListAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
+"""

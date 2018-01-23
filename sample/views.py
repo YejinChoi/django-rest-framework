@@ -6,9 +6,11 @@ from django.http import HttpResponse, JsonResponse
 from django.http import QueryDict
 from django.views.decorators.csrf import csrf_exempt
 from sample.forms import PostForm
+from rest_framework import generics
 
 
 # Create your views here.
-class PostViewSet(viewsets.ModelViewSet):
+#class PostViewSet(viewsets.ModelViewSet):
+class PostList(generics.ListAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'myapp',
     'sample',
     'cbv',
+    'restEx',
 ]
 
 MIDDLEWARE = [
@@ -79,8 +80,12 @@ WSGI_APPLICATION = 'tutorial.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mydjango', #DB명
+        'USER' : 'yejin', #데이터베이스 계정
+        'PASSWORD' : 'yejinchoi', #비밀번호
+        'HOST' : '127.0.0.1', #데이터베이스 주소
+        'PORT' : '3306', #포트번호
     }
 }
 

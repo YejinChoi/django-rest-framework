@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^myapp/',include('myapp.urls')),
     #url(r'^sample/', include('sample.urls', namespace='sample')),
     url(r'^cbv/', include('cbv.urls', namespace='cbv')),
+    url(r'^restEx/', include('restEx.urls', namespace='restEx')),
 ]

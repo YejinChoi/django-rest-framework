@@ -23,4 +23,5 @@ urlpatterns = [
     #url(r'^sample/', include('sample.urls', namespace='sample')),
     url(r'^cbv/', include('cbv.urls', namespace='cbv')),
     url(r'^restEx/', include('restEx.urls', namespace='restEx')),
+    url(r'^ep03/',include('ep03.urls', namespace='ep03')),
 ]

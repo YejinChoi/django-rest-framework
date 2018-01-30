@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'cbv',
     'restEx',
     'ep03',
+    'ep08',
 ]
 
 MIDDLEWARE = [

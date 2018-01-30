@@ -20,6 +20,7 @@ from myapp import views
 urlpatterns = [
     url(r'^admin/',admin.site.urls),
     url(r'^myapp/',include('myapp.urls')),
+    url(r'api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     #url(r'^sample/', include('sample.urls', namespace='sample')),
     url(r'^cbv/', include('cbv.urls', namespace='cbv')),
     url(r'^restEx/', include('restEx.urls', namespace='restEx')),
